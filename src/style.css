@@ -1,0 +1,14 @@
+:root {
+  --ejs-mark: #fff3a3;
+  --ejs-code-bg: #eff1f3;
+  --ejs-line: #d1d9e0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ejs-mark: #5c4b00;
+    --ejs-code-bg: #262c36;
+    --ejs-line: #3d444d;
+  }
+}
+.codex-editor mark { background: var(--ejs-mark); color: inherit; padding: 0 .1em; border-radius: 2px; }
+.codex-editor code { font: .9em ui-monospace, SFMono-Regular, Consolas, monospace; background: var(--ejs-code-bg); border: 1px solid var(--ejs-line); border-radius: 3px; padding: .05em .3em; }
